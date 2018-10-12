@@ -1,6 +1,6 @@
 #! /bin/bash
 
-directory=~/workspace/scriptlogs/logs/$(date +%Y)/$(date +%m)/$(date +%d);
+directory=${ROOT_DIR}/logs/$(date +%Y)/$(date +%m)/$(date +%d);
 filename=script_$(date +%H%M%S).txt;
 mkdir -p ${directory};
 script ${directory}/${filename} 
